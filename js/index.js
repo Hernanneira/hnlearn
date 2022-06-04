@@ -35,10 +35,81 @@
 // }
 
 
-let texto ="";
-let textob ="";
-do{
-   texto = prompt("Ingresar texto");
-   textob = textob + "" + texto
-   console.log(textob);
-}while(texto != "ESC");
+// let texto ="";
+// let textob ="";
+// do{
+//    texto = prompt("Ingresar texto");
+//    textob = textob + "" + texto
+//    console.log(textob);
+// }while(texto != "ESC");
+
+
+// function impuesto(precio, porcentaje){
+//    return precio + ((precio * porcentaje)/100)
+// }
+// for (let index = 0; index < 5; index++) {
+//    let resultado = impuesto ((prompt("INGRESAR PRECIO")) ,(prompt("INGRESAR porcentaje")));
+
+//    alert (resultado);
+// }
+
+// let nombreUsuario = prompt("BIENVENDIOS! \n Por favor ingrese su nombre");
+// alert("Hola " + nombreUsuario + "\nA continuación realizaremos la solicitud con el presupuesto estimado para el servicio de tu empresa")
+// let sap = prompt("¿Necesitas un sistema de autoprotecion tu instalacion?\nSI o NO");
+// let instalacion;
+// let presupuesto = 0;
+
+// switch (sap) {
+//    case"SI":
+//       presupuesto = presupuesto + 20000;
+//       break
+//    case"NO":
+//       prompt("¿podemos ofrecerte otro servicio? \n SI o NO")
+//          break
+//    default:
+//       alert ("Error, Vuelva a ingresar respuesta")
+//    break
+// }
+
+// console.log(presupuesto)
+
+
+// let nombreUsuario = prompt("BIENVENDIOS! \n Por favor ingrese su nombre");
+// alert("Hola " + nombreUsuario + "\nA continuación realizaremos la solicitud con el presupuesto estimado para el servicio de tu empresa")
+let cantidadDeServicios = prompt("Porfavor selecione la CANTIDAD de Servicios que, \n 1 = Sistema de autoproteccion \n 2 = Certificado de Ignifugado \n 3 = Asesoramiento Legal \n 4 = Presentacion ART \n 5 = Estuduos Higienicos \n 6 = Programas de Seguridad o ananlisis de riesgos");
+let servicios 
+let instalacion;
+let presupuesto = 0;
+
+function suma (precio) {
+   return presupuesto = presupuesto + precio
+}
+
+for (i = 1; i <= cantidadDeServicios; i++) {
+   let servicios = prompt("Estos son los servicios que brindamos, porfavor selecciona que servicios necesitas \n 1 = Sistema de autoproteccion \n 2 = Certificado de Ignifugado \n 3 = Asesoramiento Legal \n 4 = Presentacion ART \n 5 = Estuduos Higienicos \n 6 = Programas de Seguridad o ananlisis de riesgos");
+   switch (servicios) {
+      case "1":
+         suma (30000)
+         break
+      case "2":
+         suma (10000)
+         break
+      case "3":
+         suma (6000)
+         break
+      case "4":
+         suma (12000)
+         break
+      case "5":
+         suma (35000)
+         break
+      case "6":
+         suma (25000)
+         break
+      default:
+         alert("Error del valor ingresado.")
+         break
+   }
+}
+
+console.log(presupuesto)
